@@ -59,7 +59,7 @@ Las imágenes fueron creadas con **ImageMagick** y los sonidos con **Sox**.
 
 - **Instalaciones**  
   ![Instalación imágenes](Imagenes/Instalación_para_las_imagenes.png)  
-  ![Instalación audios](Imagenes/Instalación_para_los_audios .png)
+  ![Instalación audios](Imagenes/Instalación_para_los_audios.png)
 
 - **Imágenes**  
   ![Imágenes Naves](Imagenes/Creación_de_las_imagenes_naves.png)  
