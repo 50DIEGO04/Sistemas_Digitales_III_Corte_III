@@ -68,7 +68,7 @@ Las imágenes fueron creadas con **ImageMagick** y los sonidos con **Sox**.
 
 - **Audios**  
   ![Audios Naves](Imagenes/Creación_de_los_audio_naves.png)  
-  ![Audios Tanques](Imagenes/Creación_de_audio_Tanques.png)
+  ![Audios Tanques](Imagenes/Creacion_de_audio_Tanques.png)
 
 ---
 
