@@ -34,7 +34,7 @@ Tarea_9/
 
 Se creó un entorno virtual por juego y se instaló `pygame==2.5.2`.
 
-![Activación entorno virtual](Imagenes/Activación_instalación_Venv naves.png)
+![Activación entorno virtual](Imagenes/Activación_instalación_Venv_naves.png)
 
 ---
 
