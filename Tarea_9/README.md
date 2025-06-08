@@ -119,7 +119,7 @@ Cada juego fue ejecutado exitosamente desde su entorno virtual.
   ![Dockerfile Naves](Imagenes/Creación_de_Dockerfile_nave.png)
 
 - **Dockerfile Tanques**  
-  ![Dockerfile Tanques](Imagenes/Creación_de_Dockerfile_tanques.png)
+  ![Dockerfile Tanques](Creación_de_Dockerfile_tanques.png)
 
 - **Dockerfile Tetris**  
   ![Dockerfile Tetris](Imagenes/Creación_de_Dockerfile_tetris.png)
