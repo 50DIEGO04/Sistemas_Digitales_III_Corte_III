@@ -1,12 +1,12 @@
 # 🎮 Tarea 9 – Juegos Clásicos en Python con Docker
 
-Este proyecto corresponde a la **Tarea 9** de la asignatura **Sistemas Digitales III**, donde se desarrollaron tres juegos clásicos en Python usando Pygame: **Naves**, **Tanques** y **Tetris**. Cada uno fue estructurado en su propia carpeta, con entorno virtual independiente y contenedor Docker funcional.
+Este proyecto corresponde a la Tarea 9 de la asignatura **Sistemas Digitales III**, en el cual se desarrollaron tres juegos clásicos (Naves, Tanques y Tetris) utilizando **Python con Pygame** y se empaquetaron usando **Docker**.
 
 ---
 
-## 📁 Estructura de Carpetas
+## 📁 Estructura del Proyecto
 
-```bash
+```plaintext
 Tarea_9/
 ├── naves/
 │   ├── main.py
@@ -30,139 +30,148 @@ Tarea_9/
 
 ---
 
-## ✅ 1. Activación de entorno virtual y dependencias
+## ✅ 1. Activación del entorno virtual
 
-Se creó un entorno virtual por juego y se instaló `pygame==2.5.2`.
+Se crearon entornos virtuales independientes por juego usando `python3 -m venv`.
 
-![Activación entorno virtual](Imagenes/Activación_instalación_Venv_naves.png)
-
----
-
-## ⬇️ 2. Clonación y preparación del código
-
-Se utilizó `sparse-checkout` para clonar solo las carpetas requeridas desde GitHub.
-
-- **Naves**  
-  ![Clonación Naves](Imagenes/Clonación_main.py_Naves.png)
-
-- **Tanques**  
-  ![Clonación Tanques](Imagenes/Clonación_main.py_tanques.png)
-
-- **Tetris**  
-  ![Clonación Tetris](Imagenes/Clonación_main.py_tetris.png)
+![Activación Venv](./Imagenes/Activación_instalación_Venv.png)
 
 ---
 
-## 🎨 3. Creación de imágenes y sonidos
+## 🧩 2. Clonación de los juegos desde GitHub
 
-Las imágenes fueron creadas con **ImageMagick** y los sonidos con **Sox**.
+Se utilizó **sparse-checkout** para clonar solo las carpetas requeridas desde GitHub.
 
-- **Instalaciones**  
-  ![Instalación imágenes](Imagenes/Instalación para las imagenes.png)  
-  ![Instalación audios](Imagenes/Instalación para los audios .png)
+### Naves
+![Clonación Naves](./Imagenes/Clonación_main.py_Naves.png)
 
-- **Imágenes**  
-  ![Imágenes Naves](Imagenes/Creación de las imagenes naves.png)  
-  ![Imágenes Tanques](Imagenes/Creacion de imagenes Tanques.png)  
-  ![Imágenes Tetris](Imagenes/Creación de la imagen Tetris.png)
+### Tanques
+![Clonación Tanques](./Imagenes/Clonación_main.py_tanques.png)
 
-- **Audios**  
-  ![Audios Naves](Imagenes/Creación de los audio naves.png)  
-  ![Audios Tanques](Imagenes/Creación de audio Tanques.png)
+### Tetris
+![Clonación Tetris](./Imagenes/Clonación_main.py_tetris.png)
 
 ---
 
-## 📁 4. Organización de Carpetas
+## 🖼️ 3. Creación de imágenes y sonidos
 
-Se reubicaron correctamente los archivos y recursos multimedia.
+Se empleó **ImageMagick** para generar imágenes y **sox** para crear sonidos de efectos.
 
-![Carpetas](Imagenes/Creación_Carpetas.png)
+### Instalación de paquetes:
+![Instalación ImageMagick y sox](./Imagenes/Instalación para las imagenes.png)
+![Instalación formatos de audio](./Imagenes/Instalación para los audios .png)
 
----
+### Imágenes del juego Naves:
+![Imágenes Naves](./Imagenes/Creación de las imagenes naves.png)
 
-## ▶️ 5. Verificación de código y ejecución
+### Sonidos del juego Naves:
+![Sonidos Naves](./Imagenes/Creación de los audio naves.png)
 
-Cada juego fue ejecutado exitosamente desde su entorno virtual.
+### Imágenes del juego Tanques:
+![Imágenes Tanques](./Imagenes/Creacion de imagenes Tanques.png)
 
-- **Movimiento en Código Naves**  
-  ![Movimiento Naves](Imagenes/Movimiento_main.py_nave.png)
+### Sonido del juego Tanques:
+![Sonidos Tanques](./Imagenes/Creacion de audio Tanques.png)
 
-- **Movimiento Tanques**  
-  ![Movimiento Tanques](Imagenes/Movimiento_main.py_tanques.png)
-
-- **Movimiento Tetris**  
-  ![Movimiento Tetris](Imagenes/Movimiento_main.py_tetris.png)
-
-- **Vista de Código Naves**  
-  ![Código Naves](Imagenes/nano_main.py_naves.png)
-
-- **Vista de Código Tanques**  
-  ![Código Tanques](Imagenes/nano_main.py_tanques.png)
-
-- **Vista de Código Tetris**  
-  ![Código Tetris](Imagenes/nano_main.py_tetris.png)
-
-- **Ejecución Naves**  
-  ![Juego Naves](Imagenes/Juego corriendo naves.png)
-
-- **Ejecución Tanques**  
-  ![Juego Tanques](Imagenes/Juego corriendo Tanques.png)
-
-- **Ejecución Tetris**  
-  ![Juego Tetris](Imagenes/Juego corriendo Tetris.png)
+### Imagen Tetris:
+![Imagen Tetris](./Imagenes/Creación de la imagen Tetris.png)
 
 ---
 
-## 🐳 6. Creación de Dockerfile por juego
+## 📦 4. Organización de carpetas
 
-- **Dockerfile Naves**  
-  ![Dockerfile Naves](Imagenes/Creación de Dockerfile_nave.png)
+Se reubicaron correctamente los archivos fuente a sus carpetas correspondientes.
 
-- **Dockerfile Tanques**  
-  ![Dockerfile Tanques](Imagenes/Creación de Dockerfile_tanques.png)
-
-- **Dockerfile Tetris**  
-  ![Dockerfile Tetris](Imagenes/Creación de Dockerfile_tetris.png)
+![Creación Carpetas](./Imagenes/Creación_Carpetas.png)
+![Entorno Virtual](./Imagenes/Creación_Entorno_Virtual.png)
 
 ---
 
-## 📦 7. Construcción de Imágenes Docker
+## 🧪 5. Verificación del código
 
-Cada imagen Docker fue construida exitosamente.
+Los tres juegos fueron verificados y corren correctamente desde su entorno.
 
-- **Naves**  
-  ![Imagen Naves](Imagenes/Creación de imagen docker naves.png)
+### Nave:
+![Juego Naves](./Imagenes/Codigo del juego corriendo naves.png)
 
-- **Tanques**  
-  ![Imagen Tanques](Imagenes/Creación de imagen docker tanques.png)
+### Tanques:
+![Juego Tanques](./Imagenes/Codigo del juego corriendo tanques.png)
 
-- **Tetris**  
-  ![Imagen Tetris](Imagenes/Creación de la imagen Tetris.png)
-
----
-
-## 🚀 8. Ejecución desde contenedor Docker
-
-Cada contenedor fue ejecutado y el juego funcionó correctamente.
-
-- **Contenedor Naves**  
-  ![Naves Docker](Imagenes/Imagen de docker corriendo_nave.png)
-
-- **Contenedor Tanques**  
-  ![Tanques Docker](Imagenes/Imagen de docker corriendo_Tanques.png)
-
-- **Contenedor Tetris**  
-  ![Tetris Docker](Imagenes/Imagen de docker corriendo_tetris.png)
+### Tetris:
+![Juego Tetris](./Imagenes/Codigo del juego corriendo tetris.png)
 
 ---
 
-## 🧠 Conclusiones
+## 🐳 6. Dockerfile por juego
 
-Esta tarea permitió consolidar:
+Cada juego cuenta con su `Dockerfile` propio para crear imágenes portables.
 
-- La organización modular de proyectos en Python.
-- La creación manual de recursos gráficos y sonoros.
-- El uso de `venv` para entornos aislados.
-- La construcción de contenedores Docker con interfaz gráfica (`pygame`).
-- La ejecución portátil y estandarizada de videojuegos.
+### Naves:
+![Dockerfile Naves](./Imagenes/Creación de Dockerfile_nave.png)
 
+### Tanques:
+![Dockerfile Tanques](./Imagenes/Creación de Dockerfile _ tanques.png)
+
+### Tetris:
+![Dockerfile Tetris](./Imagenes/Creación de Dockerfile_tetris.png)
+
+---
+
+## 🛠️ 7. Creación de imágenes Docker
+
+Se construyeron las imágenes Docker para cada juego:
+
+### Imagen de Naves:
+![Imagen Docker Naves](./Imagenes/Creación de imagen docker naves.png)
+
+### Imagen de Tanques:
+![Imagen Docker Tanques](./Imagenes/Creación de imagen docker tanques.png)
+
+### Imagen de Tetris:
+![Imagen Docker Tetris](./Imagenes/Creación de la imagen Tetris.png)
+
+---
+
+## ▶️ 8. Ejecución desde contenedores
+
+Cada juego fue ejecutado desde Docker. Se solucionaron errores comunes como:
+
+- Variables de entorno `XDG_RUNTIME_DIR`
+- Error con `mixer not initialized`
+- Permisos de acceso al entorno gráfico
+
+### Juego Naves
+![Juego corriendo Naves](./Imagenes/Juego corriendo naves.png)
+![Finalizando Naves](./Imagenes/Juego finalizado.png)
+
+### Juego Tanques
+![Juego corriendo Tanques](./Imagenes/Juego corriendo.png)
+
+### Juego Tetris
+![Juego corriendo Tetris](./Imagenes/Juego corriendo Tetris.png)
+
+---
+
+## 🧠 9. Código fuente y lógica
+
+Incluye estructura, imágenes y sonidos cargados correctamente.
+
+### Naves:
+![main.py Naves](./Imagenes/nano_main.py_naves.png)
+
+### Tanques:
+![main.py Tanques](./Imagenes/nano_main.py_tanques.png)
+
+### Tetris:
+![main.py Tetris](./Imagenes/nano_main.py_tetris.png)
+
+---
+
+## 📌 Conclusiones
+
+- Se consolidó el uso de entornos virtuales y su aislamiento.
+- Se manejaron herramientas como `git sparse-checkout`, `ImageMagick` y `sox`.
+- Se empaquetaron tres juegos completos usando Docker, solucionando problemas reales de dependencias y sonido.
+- Se logró ejecutar gráficamente Pygame dentro de contenedores con recursos de sistema compartidos.
+
+---
