@@ -106,7 +106,7 @@ Cada juego fue ejecutado exitosamente desde su entorno virtual.
   ![Juego Naves](Imagenes/Juego_corriendo_naves.png)
 
 - **Ejecución Tanques**  
-  ![Juego Tanques](Imagenes/Juego_corriendo_Tanques.png)
+  ![Juego Tanques](Imagenes/Juego_corriendo.png)
 
 - **Ejecución Tetris**  
   ![Juego Tetris](Imagenes/Juego_corriendo_Tetris.png)
