@@ -34,7 +34,7 @@ Tarea_9/
 
 Se creó un entorno virtual por juego y se instaló `pygame==2.5.2`.
 
-![Activación entorno virtual](Imagenes/Activación_instalación_Venv_naves.png)
+![Activación entorno virtual](Imagenes/Activación_instalación_Venv naves.png)
 
 ---
 
@@ -59,7 +59,7 @@ Las imágenes fueron creadas con **ImageMagick** y los sonidos con **Sox**.
 
 - **Instalaciones**  
   ![Instalación imágenes](Imagenes/Instalación_para_las_imagenes.png)  
-  ![Instalación audios](Imagenes/Instalación_para_los_audios_.png)
+  ![Instalación audios](Imagenes/Instalación_para_los_audios .png)
 
 - **Imágenes**  
   ![Imágenes Naves](Imagenes/Creación_de_las_imagenes_naves.png)  
